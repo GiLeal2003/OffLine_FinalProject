@@ -1,0 +1,63 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+//@id -> chave primaria
+//@unique -> valor único
+
+//CRIAÇÃO DAS TABELAS DO BANCO DE DADOS
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Cliente{
+  cod Int @id @default(autoincrement())
+  nome String
+  pedido Pedido[]
+}
+model Estabelecimento{
+  cod Int @id @default(autoincrement())
+  nome String @unique
+  item Item[]
+  pedido Pedido[]
+  item_pedido Item_Pedido[]
+}
+model Item{
+  cod Int @id @default(autoincrement())
+  nome String
+  preco Decimal
+  tipo String
+  descricao String
+  //relacionamento
+  Estabelecimento Estabelecimento? @relation(fields: [cod_loja], references: [cod])
+  cod_loja Int
+  item_pedido Item_Pedido[]
+}
+model Pedido{
+  cod Int @id @default(autoincrement())
+  datas DateTime @default(now())
+  statusPedido String
+  tipoPagamento String
+  total Decimal
+  Estabelecimento Estabelecimento? @relation(fields: [cod_loja], references: [cod])
+  cod_loja Int
+  Cliente Cliente? @relation(fields: [cod_cli], references: [cod])
+  cod_cli Int
+  item_pedido Item_Pedido[]
+}
+model Item_Pedido{
+  quantidade Int
+  Pedido Pedido? @relation(fields: [cod_ped], references: [cod])
+  cod_ped Int @id
+  Estabelecimento Estabelecimento? @relation(fields: [cod_loja], references: [cod])
+  cod_loja Int
+  Item Item? @relation(fields: [cod_item], references: [cod])
+  cod_item Int
+}
