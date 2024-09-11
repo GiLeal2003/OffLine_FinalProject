@@ -55,9 +55,10 @@ model Pedido{
 model Item_Pedido{
   quantidade Int
   Pedido Pedido? @relation(fields: [cod_ped], references: [cod])
-  cod_ped Int @id
+  cod_ped Int 
   Estabelecimento Estabelecimento? @relation(fields: [cod_loja], references: [cod])
   cod_loja Int
   Item Item? @relation(fields: [cod_item], references: [cod])
   cod_item Int
+  @@id([cod_ped, cod_item]) // chave composta permite que o mesmo pedido seja adicionado porém com itens diferentes
 }
