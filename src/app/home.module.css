@@ -1,0 +1,347 @@
+
+.shape {
+  height: 0;
+  width: 0;
+  border-bottom: 30px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+}
+
+.root{
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  height: 44em;
+  background-color: #D3D3D3;
+}
+
+.container {
+  display: flex;
+  width: auto;
+  background-color: #D3D3D3;
+  flex-direction: column;
+}
+
+.body{
+  background-color: #D3D3D3;
+  margin-top: 5%;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  height: 500px;
+}
+
+
+/*Usuario*/
+.usuario .messager .button{
+    position: absolute;
+    right: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #AF2020;
+    border-radius: 100%;
+    padding: 25px;
+    border: 3px #FF0000 solid;
+    color: white;
+    font-size: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    height: 90px;
+    width: 90px;
+    
+}
+
+.messager .button:hover{
+    background: white;
+    color: black;
+    border: 3px #CC081B solid ;
+
+}
+
+/*Usuario*/
+.usuario .messager .button{
+  position: absolute;
+  right: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #AF2020;
+  border-radius: 100%;
+  padding: 30px;
+  border: 3px #FF0000 solid;
+  color: white;
+  font-size: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 120px;
+  width: 20px;
+  
+}
+
+.usuario .messager .button:hover {
+  background: white;
+  color: black;
+  border: 3px #CC081B solid;
+}
+
+.messager button:hover{
+  background: white;
+  color: black;
+  border: 3px #CC081B solid ;
+
+}
+
+.usuario .not-user {
+  content: "";
+  position: absolute;
+  height: 12%;
+  width: 15%;
+  background: #F5F5F5;
+  border-radius: 60px;
+  margin-right: 200px;
+  display: flex;
+  right: -170px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+}
+
+.usuario .not-user .button{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: none;
+  border-radius: 100%;
+  padding: 25px;
+  border: none;
+  font-size: 40px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+}
+
+.not-user  .button:hover{
+  background: #AF2020;
+  color: black;
+
+}
+
+
+.not-user .user{
+  position: absolute;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #F5F5F5;
+  background-color: #757575;
+  border-radius: 100%;
+  border: none;
+  width: 85px;
+  height: 85px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 40px;
+  margin-top: 7px;
+  justify-content: center;
+}
+
+.not-user .not{
+  position: absolute;
+  right: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #757575;
+  background: none;
+  border: none;
+  width: 70px;
+  height: 70px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 40px;
+  margin-top: 7px;
+  justify-content: center;
+}
+
+
+/*Apresentação*/
+
+.introducao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #D3D3D3;
+}
+
+.introducao .bemvindo{
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+.introducao .apresentacao{
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.topicos1{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+.bolinha1 {
+  background: #AF2020;
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+
+.usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 50px;
+  margin-right: 10px;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.card {
+  margin: 20px;
+}
+
+.card_content {
+  padding: 20px;
+}
+
+.name_profession {
+  margin-bottom: 20px;
+}
+
+.input {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.input .img {
+  margin-right: 10px;
+  width: 10%;
+}
+
+
+
+.input input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.button .button:hover{
+  background: #AF2020;
+
+}
+
+.button .exit{
+  background: #CC081B;
+  color: #fff;
+
+}
+
+.links1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.esq {
+  margin-right: 20px;
+}
+
+.cad {
+  margin-left: 20px;
+}
+
+.swiper {
+  margin-top: 50px;
+}
+
+.swiper-slide {
+  margin: 20px;
+}
+
+.swiper_pagination {
+  margin-top: 20px;
+}
+
+.swiper_pagination_bullet {
+  margin: 0 10px;
+}
+
+.name_profession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profession {
+  font-size: 16px;
+  color: #666;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.exit {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #CC081B;
+  color: #fff;
+  cursor: pointer;
+}
+
+.exit:hover {
+  background-color: #AF2020;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+

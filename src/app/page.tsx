@@ -1,102 +1,116 @@
 //HOMEPAGE HTML
-import Image from "next/image";
+import Link from 'next/link';
+import styles from './home.module.css';
+import Image from 'next/image';
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className={styles.container}>
+      <div className={styles.root}>
+        <div className={styles.body}>
+          <div className={styles.introducao}>
+            <div className={styles.bemvindo}>Bem-vindo ao <span style={{ color: "#AF2020"}}>Off-Line</span></div>
+            <div className={styles.apresentacao}>Nosso aplicativo foi desenvolvido para oferecer uma solução prática e eficiente para os vendedores dentro do campus Mackenzie.</div>
+            <div className={styles.topicos1}>
+              <div className={styles.bolinha1}>
+              </div>
+              <div className={styles.topico1}>Gestão Simplificada de Pedidos: Receba e gerencie pedidos em tempo real, reduzindo erros e melhorando a eficiência do atendimento. Tudo em um só lugar.</div>
+            </div>
+            <div className={styles.topicos1}>
+              <div className={styles.bolinha1}>
+              </div>
+              <div className={styles.topico1}>Redução de Filas: Com o sistema de pedidos antecipados, você pode preparar os pedidos com antecedência, diminuindo o tempo de espera dos clientes e evitando filas no seu estabelecimento</div>
+            </div>
+            <div className={styles.topicos1}>
+              <div className={styles.bolinha1}>
+              </div>
+              <div className={styles.topico1}>Análise de Vendas: Acompanhe suas vendas e obtenha insights valiosos sobre os produtos mais vendidos e o comportamento dos clientes, ajudando a otimizar seu negócio.</div>
+            </div>
+            <div className={styles.topicos1}>
+              <div className={styles.bolinha1}>
+              </div>
+              <div className={styles.topico1}>Para acessar o aplicativo mobile clique no botão abaixo.</div>
+              <div className={styles.button}>
+                <Link href="http://localhost:3000/pedido/1paginaInicial"><button className={styles.exit} >Acessar</button></Link>
+              </div>
+            </div>
+          </div>
+          
+          <section className={styles.usuario}>
+            <div className="swiper mySwiper container">
+              <div className="swiper-wrapper content">
+                <div className="swiper-slide card">
+                  <div className={styles.card_content}>
+                    <div className={styles.name_profession}>
+                      <span className={styles.name}>Login</span>
+                      <span className={styles.name}>VENDAS</span>
+                      <span className={styles.profession}>Informe seu usuário e senha</span>
+                    </div>
+                    <label htmlFor="username"></label>
+                    <div className={styles.input}>
+                      <img className={styles.img} src="/user.png" alt="user" />
+                      <input className={styles.username} name="username" placeholder="Digite seu usuário" type="text"/>
+                    </div>
+                    <label htmlFor="senha"></label>
+                    <div className={styles.input}>
+                      <img className={styles.img} src="/lock.png" alt="lock" />
+                      <input id="senha" name="senha" placeholder="Digite sua senha" type="password"/>
+                    </div>
+                    <div className={styles.button}>
+                      <Link href="http://localhost:3000/dashboard"><button className={styles.exit} >Acessar</button></Link>
+                    </div>
+                    <div className={styles.links1}>
+                      <div className={styles.esq}>
+                      <Link href="http://localhost:3000/auxiliares/esqueciSenha">
+                        <button>Esqueci minha senha</button></Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <section className={styles.usuario}>
+            <div className="swiper mySwiper container">
+              <div className="swiper-wrapper content">
+                <div className="swiper-slide card">
+                  <div className={styles.card_content}>
+                    <div className={styles.name_profession}>
+                      <span className={styles.name}>Login</span>
+                      <span className={styles.name}>GESTÃO</span>
+                      <span className={styles.profession}>Informe seu usuário e senha</span>
+                    </div>
+                    <label htmlFor="username"></label>
+                    <div className={styles.input}>
+                      <img className={styles.img} src="/user.png" alt="user" />
+                      <input className={styles.username} name="username" placeholder="Digite seu usuário" type="text"/>
+                    </div>
+                    <label htmlFor="senha"></label>
+                    <div className={styles.input}>
+                      <img className={styles.img} src="/lock.png" alt="lock" />
+                      <input id="senha" name="senha" placeholder="Digite sua senha" type="password"/>
+                    </div>
+                    <div className={styles.button}>
+                      <Link href="http://localhost:3000/gestaoDashboard"><button className={styles.exit} >Acessar</button></Link>
+                    </div>
+                    <div className={styles.links1}>
+                      <div className={styles.esq}>
+                      <Link href="http://localhost:3000/auxiliares/esqueciSenha">
+                        <button>Esqueci minha senha</button></Link>
+                      </div>
+                      <div className={styles.cad}>
+                      <Link href="http://localhost:3000/auxiliares/cadastroEmpresa">
+                        <button>Cadastre a sua empresa</button></Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+    </main>
   );
 }
