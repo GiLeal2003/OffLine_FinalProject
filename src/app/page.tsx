@@ -1,5 +1,6 @@
 //HOMEPAGE HTML
 import styles from '@/app/home.module.css';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -45,7 +46,7 @@ export default function Page() {
                       <input id="senha" name="senha" placeholder="Digite sua senha" type="password"/>
                     </div>
                     <div className={styles.button}>
-                     <button className={styles.exit} >Acessar</button>
+                    <Link href="http://localhost:3000/vendas"><button className={styles.exit} >Acessar</button></Link>
                     </div>
                     <div className={styles.links1}>
                       <div className={styles.esq}>
