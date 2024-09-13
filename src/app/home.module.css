@@ -190,7 +190,7 @@
 }
 
 .introducao .apresentacao{
-  font-size: 16px;
+  font-size: 17px;
   margin-top: 10px;
   font-weight: 400;
 }
@@ -198,21 +198,9 @@
 .topicos1{
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 18px;
-  font-weight: 500;
-}
-
-
-.bolinha1 {
-  background: #AF2020;
-  border-radius: 50%;
-  width: 10%;
-  height: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
+  font-weight: 400;
 }
 
 
@@ -238,6 +226,7 @@
 
 .name_profession {
   margin-bottom: 20px;
+  width: 250px;
 }
 
 .input {
@@ -246,13 +235,6 @@
   display: flex;
   align-items: center;
 }
-
-.input .img {
-  margin-right: 10px;
-  width: 10%;
-}
-
-
 
 .input input {
   padding: 10px;
@@ -320,7 +302,7 @@
 
 .profession {
   font-size: 16px;
-  color: #666;
+  color: black;
 }
 
 .button {
