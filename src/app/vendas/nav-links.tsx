@@ -1,5 +1,4 @@
 'use client';
-
 import {
   UserGroupIcon,
   HomeIcon,
@@ -11,22 +10,16 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
-// Map of links to display in the side navigation.
-// Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Home', href: '/vendas', icon: HomeIcon },
-  {
-    name: 'Pedidos',
-    href: '/dashboard/invoices',
-    icon: ShoppingBagIcon,
-  },
-  { name: 'Clientes', href: '/dashboard/customers', icon: UserGroupIcon },
-  { name: 'Configurações', href: '/dashboard/settings', icon: CogIcon }
+  { name: 'Home', href: '/vendas', icon: HomeIcon, },
+  { name: 'Pedidos', href: '/vendas/pedidos', icon: ShoppingBagIcon,},
+  { name: 'Clientes', href: '/vendas/clientes', icon: UserGroupIcon },
+  { name: 'Configurações', href: '/vendas/configuracoes', icon: CogIcon }
 ];
 
 export default function NavLinks() {
   const pathname = usePathname();
-  return (
+  return(
     <>
       {links.map((link) => {
         const LinkIcon = link.icon;

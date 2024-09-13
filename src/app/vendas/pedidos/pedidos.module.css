@@ -1,0 +1,188 @@
+.usuario {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-end;
+  }
+  
+  .messager {
+    margin-right: 20px;
+  }
+  
+  .h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .messager button {
+    background-color: #AF2020;
+    border-radius: 100%;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .messager button:hover {
+    background: white;
+    color: black;
+    border: 2px #CC081B solid;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 50px;
+    margin: 20px 0;
+    padding: 20px;
+  }
+  
+  .activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .activity_data {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+  }
+  
+  .activity_data th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .activity_data td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .activity_data tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .activity_data tr:hover {
+    background-color: #ddd;
+  }
+  
+  .data_list {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: #F5F5F5;
+  }
+  
+  .data_list:hover {
+    background-color: #444;
+  }
+  
+  .card2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card2 input[type="button"] {
+    background-color: #AF2020;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .button_group {
+    margin: 10px;
+  }
+  
+  .button {
+    background-color: #AF2020;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+  }
+  
+  .button:hover {
+    background-color: #f12929;
+  }
+
+  .activity_data th:nth-child(6) {
+    width: 100px;
+  }
+  
+  .activity_data th:nth-child(7) {
+    width: 100px;
+  }
+  
+  .activity_data th:nth-child(8) {
+    width: 100px;
+  }
+  
+  .activity_data th:nth-child(9) {
+    width: 100px;
+  }
+  
+  .activity_data td:nth-child(6) {
+    text-align: center;
+  }
+  
+  .activity_data td:nth-child(7) {
+    text-align: center;
+  }
+  
+  .activity_data td:nth-child(8) {
+    text-align: center;
+  }
+  
+  .activity_data td:nth-child(9) {
+    text-align: center;
+  }
+
+  .activity_data th:nth-child(10) {
+    width: 100px;
+  }
+  
+  .activity_data td:nth-child(10) {
+    text-align: center;
+  }
+  
+  .data_detalhe {
+    background-color: #AF2020;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+  }
+  
+  .data_detalhe:hover {
+    background-color: #f12929;
+  }
+
+  .icon{
+    width: 35px;
+  }
