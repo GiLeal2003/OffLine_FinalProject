@@ -1,7 +1,7 @@
-//PÁGINA DA ABA PEDIDOS
+//PÁGINA DA ABA Clientes
 "use client";
 import Link from 'next/link';
-import styles from './pedidos.module.css';
+import styles from './clientes.module.css';
 import { ChatBubbleLeftEllipsisIcon} from '@heroicons/react/24/outline';
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
         </Link>
         </div>
       </section>
-      <h1 className={styles.h1}>Lista de Pedidos</h1>
+      <h1 className={styles.h1}>Lista de Clientes</h1>
       <div className={styles.card}>
         <div className={styles.card_content}>
           <div className={styles.activity}>
@@ -28,12 +28,7 @@ export default function Page() {
                 <tr>
                 <th>Código</th>
                 <th>Nome</th>
-                <th>Status do Pedido</th>
-                <th>Data</th>
-                <th>Valor</th>
-                <th>Pagamento</th>
                 <th>Tipo de Usuário</th>
-                <th>Detalhes</th>
                 </tr>
             </thead>
             <tbody>
