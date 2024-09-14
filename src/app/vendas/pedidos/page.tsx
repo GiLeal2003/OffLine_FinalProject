@@ -9,7 +9,7 @@ export default function Page() {
     <div>
       <section className={styles.usuario}>
         <div className={styles.messager}>
-        <Link href="http://localhost:3000/pedidos/chat">
+        <Link href="http://localhost:3000/vendas/chat">
           <button className={styles.message}>
             <ChatBubbleLeftEllipsisIcon className={styles.icon}></ChatBubbleLeftEllipsisIcon>
           </button>

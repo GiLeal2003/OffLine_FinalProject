@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import styles from './settings.module.css';
+import {UserCircleIcon } from '@heroicons/react/24/outline';
 
 export default function Page() {
   return (
@@ -8,7 +9,7 @@ export default function Page() {
         <div className={styles.card_container}>
           <div className={styles.card}>
           <div className={styles.image}>
-            <img src="/homem.jpeg" alt="foto" />
+            <UserCircleIcon className="foto" />
           </div>
           <div className={styles.name}>
             <span className={styles.name}>Dorian Grey</span>

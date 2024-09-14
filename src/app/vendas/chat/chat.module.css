@@ -1,0 +1,254 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    width: 80%;
+    height: 80vh;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+  
+  .card_header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 30%;
+  }
+  
+  .card_body {
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contacts_body {
+    padding: 20px;
+    height: 70%;
+    overflow-y: auto;
+  }
+  
+  .contacts_body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contacts_body li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contacts_body li:last-child {
+    border-bottom: none;
+  }
+  
+  .img_cont {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  
+  .img_cont img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .online_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+  }
+  
+  .offline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  
+  .user_info {
+    margin-left: 50px;
+  }
+  
+  .user_info span {
+    font-weight: bold;
+  }
+  
+  .user_info p {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .msg_card_body {
+    padding: 20px;
+    height: 70%;
+    overflow-y: auto;
+  }
+  
+  .msg_card_body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .msg_card_body li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .msg_card_body li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+  .msg_cotainer {
+    padding: 10%;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    max-width: 70%;
+    position: relative;
+    padding-bottom: 10%;
+  }
+
+  .msg_cotainer.you {
+    background-color: #4CAF50;
+    color: #fff;
+    float: right;
+  }
+  
+  .msg_cotainer.other {
+    background-color: #f0f0f0;
+    color: #333;
+    align-self: flex-start;
+  }
+  
+  .msg_cotainer span {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .msg_time {
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    margin-left: 10px;
+  }
+  
+  .card_footer {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+  }
+  
+  .type_msg {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-right: 60px;
+  }
+  
+  .input_group_append {
+    position: relative;
+  }
+  
+  .send_btn {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .send_btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  .attach_btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .attach_btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  .search_input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+  }
+  
+  .msg_ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .you {
+    justify-content: flex-end;
+  }
+  
+  .other {
+    justify-content: flex-start;
+  }
+  
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .arrow{
+    width: 30px;
+  }
