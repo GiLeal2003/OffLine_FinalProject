@@ -12,7 +12,7 @@ export default function Page() {
             <UserCircleIcon className="foto" />
           </div>
           <div className={styles.name}>
-            <span className={styles.name}>Dorian Grey</span>
+            <span className={styles.name}>Lanchonete</span>
           </div>
             <div className={styles.card_content}>
               <div className={styles.button}>

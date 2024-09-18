@@ -197,11 +197,13 @@ async function criarPedido(cod_cli: number, cod_loja: number, itens: {cod_item: 
   }
 }
 //Criar cliente
-async function criarCliente(nome: string) {
+async function criarCliente(nome: string, telefone: string, CPF: string) {
   try {
     const novoCliente = await prisma.cliente.create({
       data: {
         nome: nome,
+        telefone: telefone,
+        CPF: CPF,
       },
     })
 
@@ -214,11 +216,13 @@ async function criarCliente(nome: string) {
   }
 }
 //Criar estabelecimento
-async function criarEstabelecimento(nome: string) {
+async function criarEstabelecimento(nome: string, email: string, local: string) {
   try {
     const novoEstabelecimento = await prisma.estabelecimento.create({
       data: {
         nome: nome,
+        email: email,
+        local: local,
       },
     })
 

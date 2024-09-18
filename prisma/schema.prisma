@@ -19,12 +19,16 @@ datasource db {
 
 model Cliente{
   cod Int @id @default(autoincrement())
+  telefone String
+  CPF String
   nome String
   pedido Pedido[]
 }
 model Estabelecimento{
   cod Int @id @default(autoincrement())
   nome String @unique
+  email String
+  local String
   item Item[]
   pedido Pedido[]
   item_pedido Item_Pedido[]
