@@ -50,7 +50,7 @@ export default function Page() {
                     </div>
                     <div className={styles.links1}>
                       <div className={styles.esq}>
-                        <button>Esqueci minha senha</button>
+                      <Link href="http://localhost:3000/auxiliares/esqueciSenha"><button>Esqueci minha senha</button></Link>
                       </div>
                     </div>
                   </div>
