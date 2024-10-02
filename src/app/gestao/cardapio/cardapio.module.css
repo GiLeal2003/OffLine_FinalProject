@@ -1,0 +1,127 @@
+.container {
+    position: relative;
+    width: 1075px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter';
+  }
+  
+  .usuario {
+    position: relative;
+    height: 70px;
+    width: 1075px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .messager {
+    position: absolute;
+    right: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .messager button {
+    background-color: #AF2020;
+    border-radius: 100%;
+    padding: 25px;
+    border: none;
+    color: white;
+    font-size: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 90px;
+    width: 90px;
+    margin-top: -40px;
+  }
+  
+  .messager button:hover {
+    background: white;
+    color: black;
+    border: 3px #CC081B solid;
+  }
+  
+  .h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -3%;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+    justify-content: space-between;
+  }
+  
+  .image {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #6C0404;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product_card__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aboutMe {
+    background: #6C0404;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .product_card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .product_card .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #800000;
+    margin: 20px auto;
+  }
+  
+  .product_card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .product_card .price {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .product_card button {
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .product_card button:hover {
+    background-color: #F00A21;
+  }

@@ -1,19 +1,11 @@
-//PÁGINA DA ABA Clientes
 "use client";
-import Link from 'next/link';
 import styles from './clientes.module.css';
-import { ChatBubbleLeftEllipsisIcon} from '@heroicons/react/24/outline';
 
 export default function Page() {
   return (
     <div>
       <section className={styles.usuario}>
         <div className={styles.messager}>
-        <Link href="http://localhost:3000/vendas/chat">
-          <button className={styles.message}>
-            <ChatBubbleLeftEllipsisIcon className={styles.icon}></ChatBubbleLeftEllipsisIcon>
-          </button>
-        </Link>
         </div>
       </section>
       <h1 className={styles.h1}>Lista de Clientes</h1>

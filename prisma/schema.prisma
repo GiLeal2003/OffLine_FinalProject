@@ -29,6 +29,7 @@ model Estabelecimento{
   nome String @unique
   email String
   local String
+  CNPJ String
   item Item[]
   pedido Pedido[]
   item_pedido Item_Pedido[]

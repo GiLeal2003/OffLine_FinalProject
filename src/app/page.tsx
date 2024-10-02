@@ -78,14 +78,14 @@ export default function Page() {
                       <input id="senha" name="senha" placeholder="Digite sua senha" type="password"/>
                     </div>
                     <div className={styles.button}>
-                      <button className={styles.exit} >Acessar</button>
+                    <Link href="http://localhost:3000/gestao"><button className={styles.exit} >Acessar</button></Link>
                     </div>
                     <div className={styles.links1}>
                       <div className={styles.esq}>
-                        <button>Esqueci minha senha</button>
+                      <Link href="http://localhost:3000/auxiliares/esqueciSenha"><button>Esqueci minha senha</button></Link>
                       </div>
                       <div className={styles.cad}>
-                        <button>Cadastre a sua empresa</button>
+                      <Link href="http://localhost:3000/auxiliares/cadastroEmpresa"><button>Cadastre a sua empresa</button></Link>
                       </div>
                     </div>
                   </div>
