@@ -21,8 +21,8 @@ export default function Page() {
                   <input
                     id="username"
                     name="username"
-                    placeholder="Digite seu email"
-                    type="email"
+                    placeholder="Digite o código"
+                    type="code"
                     required
                   />
                 </div>

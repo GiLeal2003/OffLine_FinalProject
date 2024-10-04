@@ -23,7 +23,7 @@ export default function Page() {
               <div className={styles.topico1}>Para acessar o aplicativo mobile clique no botão abaixo:</div>
             </div>
             <div className={styles.button}>
-              <button className={styles.exit} >Acessar</button>
+            <Link href="http://localhost:3000/cliente/pag1"><button className={styles.exit} >Acessar</button></Link>
             </div>
           </div>
           

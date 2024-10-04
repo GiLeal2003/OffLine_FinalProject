@@ -50,6 +50,33 @@ export default function Page() {
                     required
                   />
                 </div>
+                <div className={styles.input}>
+                  <input
+                    id="user"
+                    name="user"
+                    placeholder="Usuário"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div className={styles.input}>
+                  <input
+                    id="password"
+                    name="password"
+                    placeholder="Senha"
+                    type="password"
+                    required
+                  />
+                </div>
+                <div className={styles.input}>
+                  <input
+                    id="password"
+                    name="password"
+                    placeholder="Digite novamente a senha"
+                    type="password"
+                    required
+                  />
+                </div>
                 <div className={styles.button}>
                 <Link href="http://localhost:3000/auxiliares/empresaCadastrada">
                   <button className={styles.exit}>Salvar</button></Link>
