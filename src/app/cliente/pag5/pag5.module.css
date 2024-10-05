@@ -1,51 +1,53 @@
 .container {
     max-width: 360px;
     height: 600px;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     font-family: 'Inter', sans-serif;
   }
   
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  .h1 {
+    margin-bottom: 20px;
+    margin-top: 45%;
+    
   }
-  
-  .img {
+
+  .p {
+    margin-top: 20%;
     margin-bottom: 20px;
   }
   
-  .text {
-    font-size: 16px;
-    font-weight: bold;
+  .input {
+    padding: 10px;
     margin-bottom: 20px;
-  }
-  
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
   }
   
   .button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 20px;
-    background-color: #CC081B;
+    cursor: pointer;
   }
 
   .button:hover {
-    background-color: #8B0A1A;
-    color: #fff;
+    background-color: #F00A21;
+  }
+  
+  .error {
+    color: red;
   }
