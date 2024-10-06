@@ -216,13 +216,14 @@ async function criarCliente(nome: string, telefone: string, CPF: string) {
   }
 }
 //Criar estabelecimento
-async function criarEstabelecimento(nome: string, email: string, local: string) {
+async function criarEstabelecimento(nome: string, email: string, local: string, CNPJ: string) {
   try {
     const novoEstabelecimento = await prisma.estabelecimento.create({
       data: {
         nome: nome,
         email: email,
         local: local,
+        CNPJ: CNPJ,
       },
     })
 
