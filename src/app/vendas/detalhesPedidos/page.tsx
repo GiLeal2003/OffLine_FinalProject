@@ -16,7 +16,7 @@ export default function Page() {
 
   
 
-  const [clientName, setClientName] = useState('Doris Will');
+  const [clientName, setClientName] = useState('Adeline');
   const [status, setStatus] = useState('Andamento');
 
   const calculateTotal = () => {
