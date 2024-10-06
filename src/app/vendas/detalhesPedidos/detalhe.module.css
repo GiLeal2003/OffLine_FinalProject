@@ -1,0 +1,174 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card {
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .client_status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .client {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+  }
+
+  .status_dropdown {
+    background: #757575;
+    border-radius: 12%;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    appearance: none;
+  }
+
+  .itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .itens_title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .itens_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .iten_produtos_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .iten {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .quantity_price {
+    display: flex;
+    align-items: center;
+  }
+
+  .quantity {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .quantity input {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  .times {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .resumo_totais_precos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .resumo_title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .resumo_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .resumo_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .totais {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .precos {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #AF2020;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #991A1A;
+  }
