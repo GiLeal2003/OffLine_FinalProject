@@ -52,7 +52,7 @@ const prisma = new PrismaClient()
 }*/
 
 //Buscar todos os itens por estabelecimento
- async function buscartodosItens(cod_loja: number) {
+async function buscartodosItens(cod_loja: number) {
   const itensEstabelecimento = await prisma.item.findMany({
     where: {
       cod_loja: cod_loja,
@@ -313,3 +313,4 @@ async function deletarItemCardapio(cod_item: number) {
     await prisma.$disconnect()
   }
 }
+

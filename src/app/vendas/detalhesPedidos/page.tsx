@@ -95,9 +95,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <button className={styles.button} onClick={() => {}}>
-            Finalizar
-          </button>
+            <Link href="http://localhost:3000/vendas/pedidos"><button className={styles.button} onClick={() => {}}>Finalizar</button></Link>
+           
         </div>
       </div>
     </div>

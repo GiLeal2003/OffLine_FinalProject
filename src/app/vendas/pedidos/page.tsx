@@ -1,5 +1,4 @@
 //PÁGINA DA ABA PEDIDOS
-"use client";
 import Link from 'next/link';
 import styles from './pedidos.module.css';
 import { ChatBubbleLeftEllipsisIcon} from '@heroicons/react/24/outline';
@@ -59,6 +58,9 @@ export default async function Page() {
                         <option value="Finalizado">Professor</option>
                         <option value="Cancelado">Outros</option>
                       </select>
+                      </td>
+                      <td>
+                        <Link href="http://localhost:3000/vendas/detalhesPedidos"><button className={styles.data_detalhe}>Detalhes</button></Link>
                       </td>
                     </tr>
                   ))}
