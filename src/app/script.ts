@@ -7,7 +7,7 @@ const prisma = new PrismaClient()
 
 //READ
 //Buscar todos os clientes com pedido, dado o valor do estabelecimento como parâmetro
-async function buscarClientesPorEstabelecimento(cod_loja: number) {
+ export async function buscarClientesPorEstabelecimento(cod_loja: number) {
   const clientesEstabelecimento = await prisma.pedido.findMany({
     where: {
       cod_loja: cod_loja,
@@ -16,12 +16,11 @@ async function buscarClientesPorEstabelecimento(cod_loja: number) {
       Cliente: true, 
     }
   })
-
-  return clientesEstabelecimento.map(pedido => pedido.Cliente)
+  return clientesEstabelecimento.map(pedido => pedido.Cliente);
 }
 
 //Chamada1
-async function chamada1(cod_loja: number) {
+/*async function chamada1(cod_loja: number) {
   const clienteEstabelecimento = await buscarClientesPorEstabelecimento(cod_loja)
   
   if (clienteEstabelecimento.length > 0) {
@@ -29,23 +28,20 @@ async function chamada1(cod_loja: number) {
   } else {
     console.log(`Nenhum cliente encontrado no estabelecimento`)
   }
-}
+}*/
 
 //Buscar todos os pedidos no sistema por estabelecimento
-async function buscartodosPedidos(cod_loja: number) {
+ export async function buscartodosPedidos(cod_loja: number) {
     const pedidosEstabelecimento = await prisma.pedido.findMany({
       where: {
         cod_loja: cod_loja,
       },
-      select: {
-        Estabelecimento: true, 
-      }
     });
     return pedidosEstabelecimento;
 }
 
 //Chamada2
-async function chamada2(cod_loja: number) {
+/*async function chamada2(cod_loja: number) {
   const pedidoEstabelecimento = await buscartodosPedidos(cod_loja)
   
   if (pedidoEstabelecimento.length > 0) {
@@ -53,10 +49,10 @@ async function chamada2(cod_loja: number) {
   } else {
     console.log(`Nenhum pedido encontrado no estabelecimento`)
   }
-}
+}*/
 
 //Buscar todos os itens por estabelecimento
-async function buscartodosItens(cod_loja: number) {
+ async function buscartodosItens(cod_loja: number) {
   const itensEstabelecimento = await prisma.item.findMany({
     where: {
       cod_loja: cod_loja,
@@ -69,7 +65,7 @@ async function buscartodosItens(cod_loja: number) {
 }
 
 //Chamada3
-async function chamada3(cod_loja: number) {
+/*async function chamada3(cod_loja: number) {
   const itemEstabelecimento = await buscartodosItens(cod_loja)
   
   if (itemEstabelecimento.length > 0) {
@@ -77,10 +73,10 @@ async function chamada3(cod_loja: number) {
   } else {
     console.log(`Nenhum item encontrado no cardápio`)
   }
-}
+}*/
 
 //Buscar itens no pedido por estabelecimento
-async function buscarItemPedido(cod_loja: number, cod_ped: number) {
+ async function buscarItemPedido(cod_loja: number, cod_ped: number) {
   const itensPedidoEstabelecimento = await prisma.item_Pedido.findMany({
     where: {
       cod_loja: cod_loja,
@@ -96,7 +92,7 @@ async function buscarItemPedido(cod_loja: number, cod_ped: number) {
 }
 
 //Chamada4
-async function chamada4(cod_loja: number, cod_ped: number) {
+/*async function chamada4(cod_loja: number, cod_ped: number) {
   const itemPedidoEstabelecimento = await buscarItemPedido(cod_loja, cod_ped)
   
   if (itemPedidoEstabelecimento.length > 0) {
@@ -104,10 +100,10 @@ async function chamada4(cod_loja: number, cod_ped: number) {
   } else {
     console.log(`Nenhum item encontrado no pedido`)
   }
-}
+}*/
 
 //Buscar cliente por pedido
-async function buscarPedidoCliente(cod_loja: number, cod_cli: number) {
+ async function buscarPedidoCliente(cod_loja: number, cod_cli: number) {
   const pedidosClienteEstabelecimento = await prisma.pedido.findMany({
     where: {
       cod_loja: cod_loja,
@@ -122,7 +118,7 @@ async function buscarPedidoCliente(cod_loja: number, cod_cli: number) {
 }
 
 //Chamada5
-async function chamada5(cod_loja: number, cod_cli: number) {
+/*async function chamada5(cod_loja: number, cod_cli: number) {
   const pedidoClienteEstabelecimento = await buscarPedidoCliente(cod_loja, cod_cli)
   
   if (pedidoClienteEstabelecimento.length > 0) {
@@ -130,22 +126,22 @@ async function chamada5(cod_loja: number, cod_cli: number) {
   } else {
     console.log(`Nenhum pedido encontrado para este cliente`)
   }
-}
+}*/
 
 //Buscar todos os estabelecimentos
-async function buscarEstabelecimentos() {
+export async function buscarEstabelecimentos() {
   const estabelecimentos = await prisma.estabelecimento.findMany()
   return estabelecimentos;
 }
 
 //Chamada6
-buscarEstabelecimentos().then(estabelecimentos => {
+/*buscarEstabelecimentos().then(estabelecimentos => {
   console.log(estabelecimentos)
 }).catch(e => {
   console.error(e)
 }).finally(async () => {
   await prisma.$disconnect()
-})
+})*/
 
 //CREATE
 //Criar pedido

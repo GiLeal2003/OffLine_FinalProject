@@ -3,8 +3,16 @@
 import Link from 'next/link';
 import styles from './pedidos.module.css';
 import { ChatBubbleLeftEllipsisIcon} from '@heroicons/react/24/outline';
+import {buscartodosPedidos} from "@/app/script";
+import { buscarClientesPorEstabelecimento } from '@/app/script';
 
-export default function Page() {
+export default async function Page() {
+  const pedidos = await buscartodosPedidos(2);
+  const clientes = await buscarClientesPorEstabelecimento(2);
+  const nomeCliente = (cod_cli: number) => {
+    const cliente = clientes.find((cliente) => cliente?.cod === cod_cli);
+    return cliente ? cliente.nome : "Cliente não encontrado";
+  };
   return (
     <div>
       <section className={styles.usuario}>
@@ -37,6 +45,23 @@ export default function Page() {
                 </tr>
             </thead>
             <tbody>
+              {pedidos.map((pedido) => (
+                    <tr key={pedido.cod}>
+                      <td>{pedido.cod}</td>
+                      <td>{nomeCliente(pedido.cod_cli)}</td>
+                      <td>{pedido.statusPedido}</td>
+                      <td>{new Date(pedido.datas).toLocaleDateString()}</td>
+                      <td>{pedido.total.toString()}</td>
+                      <td>{pedido.tipoPagamento}</td>
+                      <td>
+                      <select name="languages" className={styles.data_list}>
+                        <option value="Andamento">Aluno</option>
+                        <option value="Finalizado">Professor</option>
+                        <option value="Cancelado">Outros</option>
+                      </select>
+                      </td>
+                    </tr>
+                  ))}
             </tbody>
             </table>
           </div>
