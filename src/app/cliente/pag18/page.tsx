@@ -27,9 +27,9 @@ export default function Page({ nomeEstabelecimento, pedido, valor, data, hora, t
           <p className={styles.you}>Você confirma a retirada do pedido?</p>
         </div>
         <div className={styles.button_container}>
-        <Link href="http://localhost:3000/cliente/">
+        <Link href="http://localhost:3000/cliente/pag19">
         <button className={styles.confirm_button}>CONFIRMO</button></Link>
-        <Link href="http://localhost:3000/cliente/">
+        <Link href="http://localhost:3000/cliente/pag21">
         <button className={styles.cancel_button}>Não confirmo</button></Link>
         </div>
       </div>

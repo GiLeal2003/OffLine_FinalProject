@@ -33,27 +33,27 @@ interface Props {
 
           <h1 className={styles.h1}>Novo horário agendado com sucesso!</h1>
 
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag8">
           <button className={styles.buttonC}>VOLTAR MENU PRINCIPAL</button></Link>
         </div>
 
         <div className={styles.footer}>
-        <Link href="http://localhost:3000/cliente/">
+        <Link href="http://localhost:3000/cliente/pag8">
         <button className={styles.button}>
             <Image src={home} width={30} height={30} alt="home"></Image>
         </button></Link>
 
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag31">
           <button className={styles.button}>
             <Image src={chat} width={30} height={30} alt="chat"></Image>
           </button></Link>
 
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag27">
           <button className={styles.button}>
             <Image src={token} width={40} height={40} alt="token"></Image>
           </button></Link>
 
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag9">
           <button className={styles.button}>
             <Image src={menu} width={30} height={30} alt="menu"></Image>
           </button></Link>

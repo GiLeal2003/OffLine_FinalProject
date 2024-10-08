@@ -144,7 +144,7 @@ export default function Horario() {
   return (
     <div className={styles.container}>
       <div>
-      <Link href="http://localhost:3000/cliente/">
+      <Link href="http://localhost:3000/cliente/pag21">
       <button className={styles.backButton}>VOLTAR</button></Link>
 
         <h1 className={styles.title}>Reagendar Horário de Retirada do Pedido</h1>
@@ -168,7 +168,7 @@ export default function Horario() {
         </li>
       ))}
     </ul>
-    <Link href="http://localhost:3000/cliente/">
+    <Link href="http://localhost:3000/cliente/pag25">
     <button className={styles.confirmarBtn}>CONFIRMAR</button></Link>
 
       

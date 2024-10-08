@@ -14,7 +14,7 @@ import vr from "@/public/vr.jpeg";
 export default function Page() {
     return (
       <div className={styles.container}>
-        <Link href="http://localhost:3000/cliente/">
+        <Link href="http://localhost:3000/cliente/pag10">
         <button className={styles.back_button}>VOLTAR</button></Link>
         
         <h1 className={styles.h1}>Formas de Pagamento</h1>
@@ -26,7 +26,7 @@ export default function Page() {
         <div className={styles.payment_section}>
           <h4 className={styles.h4}>Meus cartões</h4>
           
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag12">
           <button className={styles.card_option}>
             <div className={styles.card_icon}>
                 <Image src={credito} width={45} height={40} alt="credito"></Image>
@@ -37,7 +37,7 @@ export default function Page() {
             </div>
           </button></Link>
 
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag14">
           <button className={styles.card_option}>
             <div className={styles.card_icon}>
                 <Image src={debito} width={45} height={40} alt="debito"></Image>
@@ -50,7 +50,7 @@ export default function Page() {
           
           <h4 className={styles.h4}>Novo método de pagamento</h4>
           
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag13">
           <button className={styles.card_option}>
             <div className={styles.card_icon}>
                 <Image src={pix} width={45} height={40} alt="pix"></Image>
@@ -60,7 +60,7 @@ export default function Page() {
             </div>
           </button></Link>
 
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag15">
           <button className={styles.card_option}>
             <div className={styles.card_icon}>
                 <Image src={vr} width={45} height={40} alt="vr"></Image>

@@ -121,7 +121,7 @@ export default function Horario() {
   return (
     <div className={styles.container}>
       
-      <Link href="http://localhost:3000/cliente/">
+      <Link href="http://localhost:3000/cliente/pag34">
       <button className={styles.backButton}>VOLTAR</button></Link>
 
       <h1 className={styles.title}>Horário</h1>
@@ -130,7 +130,7 @@ export default function Horario() {
         <DiaList items={diaListItems} onItemClick={handleDayChange} />
       </div>
       <ul className={styles.horaSlots}>
-        <Link href="http://localhost:3000/cliente/">
+        <Link href="http://localhost:3000/cliente/pag10">
         <button>Para Agora</button></Link>
 
         <h3 className={styles.title3}>Agendamento</h3>
@@ -142,7 +142,7 @@ export default function Horario() {
       ))}
     </ul>
     
-    <Link href="http://localhost:3000/cliente/">
+    <Link href="http://localhost:3000/cliente/pag10">
     <button className={styles.confirmarBtn}>CONFIRMAR</button></Link>
     
   </div>

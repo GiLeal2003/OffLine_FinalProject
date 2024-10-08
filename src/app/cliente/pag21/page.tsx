@@ -22,7 +22,7 @@ export default function Page({ pedido, valor, data, hora, token }: Props) {
     return (
       <div className={styles.container}>
         <div className={styles.header}>
-        <Link href="http://localhost:3000/cliente/">
+        <Link href="http://localhost:3000/cliente/pag8">
         <button className={styles.voltar}>VOLTAR</button></Link>
         </div>
         <div className={styles.pedido_info}>
@@ -33,35 +33,34 @@ export default function Page({ pedido, valor, data, hora, token }: Props) {
           <p>Número do token: {token}</p>
         </div>
         <div className={styles.actions}>
-        <Link href="http://localhost:3000/cliente/">
+        <Link href="http://localhost:3000/cliente/pag22">
         <button className={styles.cancelar}>CANCELAR PEDIDO</button></Link>
 
-        <Link href="http://localhost:3000/cliente/">
+        <Link href="http://localhost:3000/cliente/pag24">
         <button className={styles.reagendar}>REAGENDAR HORÁRIO DE RETIRADA DO PEDIDO</button></Link>
 
         </div>
 
         <div className={styles.footer}>
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag8">
           <button className={styles.button}>
             <Image src={home} width={30} height={30} alt="home"></Image>
           </button></Link>
 
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag31">
           <button className={styles.button}>
             <Image src={chat} width={30} height={30} alt="chat"></Image>
           </button></Link>
 
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag27">
           <button className={styles.button}>
             <Image src={token} width={40} height={40} alt="token"></Image>
           </button></Link>
 
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag9">
           <button className={styles.button}>
             <Image src={menu} width={30} height={30} alt="menu"></Image>
           </button></Link>
-          
         </div>
       </div>
     );

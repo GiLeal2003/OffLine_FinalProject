@@ -22,7 +22,7 @@ export default function SacolaPedido() {
     <div className={styles.container}>
   
       <div className={styles.header}>
-      <Link href="http://localhost:3000/cliente/">
+      <Link href="http://localhost:3000/cliente/pag30">
         <button className={styles.backButton}>VOLTAR</button></Link>
       </div>
       <h1 className={styles.title}>Minha Sacola</h1>
@@ -47,7 +47,7 @@ export default function SacolaPedido() {
           </div>
         ))}
       </div>
-      <Link href="http://localhost:3000/cliente/">
+      <Link href="http://localhost:3000/cliente/pag32">
       <button className={styles.confirmButton}>PAGAR</button></Link>
     </div>
   );

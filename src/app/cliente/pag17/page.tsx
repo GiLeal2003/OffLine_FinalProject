@@ -24,12 +24,12 @@ export default function Page({ nomeEstabelecimento, pedido, valor, data, token }
           <p className={styles.center}>Nome Estabelecimento {nomeEstabelecimento}</p>
           <p className={styles.title}>NÚMERO DE TOKEN de Retirada do Pedido</p>
           <p className={styles.title}>{token}</p>
-          <Link href="http://localhost:3000/cliente/"><button className={styles.transparent_button}>
+          <Link href="http://localhost:3000/cliente/pag9"><button className={styles.transparent_button}>
             Acesse seu PERFIL para ver seu TOKEN
           </button></Link>
         </div>
         <div className={styles.footer}>
-        <Link href="http://localhost:3000/cliente/">
+        <Link href="http://localhost:3000/cliente/pag8">
           <button className={styles.center}>CONCLUIR</button></Link>
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function Page({ pedido, valor, data }: Props) {
       <div className={styles.body}>
       <h2 className={styles.title}>Pagamento aprovado</h2>
       <div className={styles.footer}>
-      <Link href="http://localhost:3000/cliente/">
+      <Link href="http://localhost:3000/cliente/pag17">
       <button className={styles.center}>CONCLUIR</button></Link>
       </div>
       </div>

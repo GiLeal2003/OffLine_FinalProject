@@ -41,13 +41,13 @@ interface PageProps {
             <Link href="#">Acessibilidade</Link>
             </li>
             <li>
-            <Link href="http://localhost:3000/cliente/">Tokens</Link>
+            <Link href="http://localhost:3000/cliente/pag27">Tokens</Link>
             </li>
             <li>
-            <Link href="http://localhost:3000/cliente/">Cancelar Pedido</Link>
+            <Link href="http://localhost:3000/cliente/pag22">Cancelar Pedido</Link>
             </li>
             <li>
-            <Link href="http://localhost:3000/cliente/">Reagendar pedido</Link>
+            <Link href="http://localhost:3000/cliente/pag24">Reagendar pedido</Link>
             </li>
             <li>
             <Link href="#">Configurações</Link>

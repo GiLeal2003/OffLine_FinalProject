@@ -22,7 +22,7 @@ export default function Page({ nomeEstabelecimento, pedido, valor, data, hora, s
     return (
       <div className={styles.container}>
         <div className={styles.header}>
-        <Link href="http://localhost:3000/cliente/">
+        <Link href="http://localhost:3000/cliente/pag32">
         <button className={styles.back_button}>VOLTAR</button></Link>
 
         </div>
@@ -62,10 +62,10 @@ export default function Page({ nomeEstabelecimento, pedido, valor, data, hora, s
           </ul>
         </div>
         
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag11">
           <button className={styles.pagar_button}>PAGAR</button></Link>
 
-          <Link href="http://localhost:3000/cliente/"><button className={styles.cancelar_button}>Cancelar pedido</button></Link>
+          <Link href="http://localhost:3000/cliente/pag8"><button className={styles.cancelar_button}>Cancelar pedido</button></Link>
       
       </div>
     );

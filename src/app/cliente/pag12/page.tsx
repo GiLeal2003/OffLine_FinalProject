@@ -9,7 +9,7 @@ import credito from "@/public/credito.png";
 export default function CreditoPage() {
     return (
       <div className={styles.container}>
-        <Link href="http://localhost:3000/cliente/">
+        <Link href="http://localhost:3000/cliente/pag11">
         <button className={styles.back_button}>VOLTAR</button></Link>
         <div className={styles.content}>
           <p>Pedido N: XXXXXX</p>
@@ -19,7 +19,7 @@ export default function CreditoPage() {
           </div>
           <h2 className={styles.title}>CRÉDITO</h2>
           <p className={styles.question}>Confirma a forma de pagamento?</p>
-          <Link href="http://localhost:3000/cliente/">
+          <Link href="http://localhost:3000/cliente/pag16">
           <button className={styles.confirm_button}>CONCLUIR</button></Link>
         </div>
       </div>
