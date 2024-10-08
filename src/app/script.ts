@@ -52,7 +52,7 @@ const prisma = new PrismaClient()
 }*/
 
 //Buscar todos os itens por estabelecimento
-async function buscartodosItens(cod_loja: number) {
+export async function buscartodosItens(cod_loja: number) {
   const itensEstabelecimento = await prisma.item.findMany({
     where: {
       cod_loja: cod_loja,
@@ -76,7 +76,7 @@ async function buscartodosItens(cod_loja: number) {
 }*/
 
 //Buscar itens no pedido por estabelecimento
- async function buscarItemPedido(cod_loja: number, cod_ped: number) {
+export async function buscarItemPedido(cod_loja: number, cod_ped: number) {
   const itensPedidoEstabelecimento = await prisma.item_Pedido.findMany({
     where: {
       cod_loja: cod_loja,
@@ -212,7 +212,7 @@ async function criarCliente(nome: string, telefone: string, CPF: string) {
   }
 }
 //Criar estabelecimento
-async function criarEstabelecimento(nome: string, email: string, local: string, CNPJ: string) {
+export async function criarEstabelecimento(nome: string, email: string, local: string, CNPJ: string) {
   try {
     const novoEstabelecimento = await prisma.estabelecimento.create({
       data: {
@@ -231,6 +231,7 @@ async function criarEstabelecimento(nome: string, email: string, local: string, 
     await prisma.$disconnect()
   }
 }
+
 //Criar Item
 async function criarItem(nome: string, preco: Decimal, tipo: string, descrição: string) {
   try {

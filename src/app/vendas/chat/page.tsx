@@ -17,10 +17,8 @@ interface Message {
     const [newMessage, setNewMessage] = useState('');
     const [messages, setMessages] = useState<MyMessage[]>([]);
     const [contacts, setContacts] = useState([
-      { id: 1, name: 'Lucas', online: true, lastSeen: 'Online' },
-      { id: 2, name: 'Marcos', online: true, lastSeen: 'Online' },
-      { id: 3, name: 'Tom', online: false, lastSeen: 'Offline' },
-      { id: 4, name: 'Antonio', online: false, lastSeen: 'Offline' },
+      { id: 1, name: 'Adeline', online: true, lastSeen: 'Online' },
+      { id: 2, name: 'Peter', online: true, lastSeen: 'Online' },
     ]);
   
     const [currentContact, setCurrentContact] = useState<{
@@ -33,7 +31,7 @@ interface Message {
     useEffect(() => {
       const fetchMessages = async () => {
         const mockMessages: MyMessage[] = [
-          { text: 'Olá! ', sender: 'Lucas', timestamp: '2023-02-20 14:30:00' },
+          { text: 'Olá! ', sender: 'Adeline', timestamp: '2023-02-20 14:30:00' },
         ];
         setMessages(mockMessages);
       };
@@ -79,17 +77,6 @@ interface Message {
                     key={contact.id}
                     onClick={() => handleContactClick(contact)}
                   >
-                    <div className={styles.img_cont}>
-                      <img
-                        src={`https://randomuser.me/api/portraits/men/${contact.id}.jpg`}
-                        alt={contact.name}
-                      />
-                      {contact.online ? (
-                        <span className={styles.online_icon} />
-                      ) : (
-                        <span className={styles.offline} />
-                      )}
-                    </div>
                     <div className={styles.user_info}>
                       <span>{contact.name}</span>
                       <p>{contact.lastSeen}</p>

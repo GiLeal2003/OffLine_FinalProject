@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from './cardapio.module.css';
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import {buscartodosItens} from '@/app/script';
 
 interface Props {}
 
