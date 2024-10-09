@@ -1,16 +1,16 @@
+'use client';
+
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './pag16.module.css';
 
-interface Props {
-  pedido: string;
-  valor: string;
-  data: string;
-}
-
-export default function Page({ pedido, valor, data }: Props) {
-  return (
-    <div className={styles.container}>
+export default function Page() {
+    const [pedido] = useState('');
+    const [valor] = useState('');
+    const [data] = useState('');
+  
+    return (
+      <div className={styles.container}>
       <p>Pedido Nº: {pedido}</p>
       <p>Data: {data}</p>
       <p className={styles.space}>Valor da Compra: R$ {valor}</p>

@@ -59,7 +59,6 @@ interface Message {
         setNewMessage('');
       }
     };
-  
     return (
       <div className={styles.container}>
         <div className={styles.card}>
@@ -75,8 +74,7 @@ interface Message {
                 {contacts.map((contact) => (
                   <li
                     key={contact.id}
-                    onClick={() => handleContactClick(contact)}
-                  >
+                    onClick={() => handleContactClick(contact)}>
                     <div className={styles.user_info}>
                       <span>{contact.name}</span>
                       <p>{contact.lastSeen}</p>
@@ -130,5 +128,4 @@ interface Message {
                   </div>
                 );
               };
-              
               export default Chat;

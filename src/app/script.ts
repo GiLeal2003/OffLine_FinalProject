@@ -53,17 +53,23 @@ const prisma = new PrismaClient()
 
 //Buscar todos os itens por estabelecimento
 export async function buscartodosItens(cod_loja: number) {
-  const itensEstabelecimento = await prisma.item.findMany({
-    where: {
-      cod_loja: cod_loja,
-    },
-    select: {
-      Estabelecimento: true, 
-    }
-  });
-  return itensEstabelecimento;
+  try {
+    const itensEstabelecimento = await prisma.item.findMany({
+      where: {
+        cod_loja: cod_loja,
+      },
+      select: {
+        cod: true,
+        nome: true,
+        preco: true, // Manter o preço como Decimal
+      },
+    });
+    return itensEstabelecimento; // Retorna os itens
+  } catch (error) {
+    console.error("Erro ao buscar itens:", error); // Log do erro
+    throw new Error("Erro ao buscar itens do cardápio");
+  }
 }
-
 //Chamada3
 /*async function chamada3(cod_loja: number) {
   const itemEstabelecimento = await buscartodosItens(cod_loja)
@@ -83,9 +89,9 @@ export async function buscarItemPedido(cod_loja: number, cod_ped: number) {
       cod_ped: cod_ped,
     },
     select: {
-      Estabelecimento: true,
-      Pedido: true,
       Item: true, 
+      Pedido: true,
+      Estabelecimento: true,
     }
   });
   return itensPedidoEstabelecimento;
@@ -315,3 +321,109 @@ async function deletarItemCardapio(cod_item: number) {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Feito por Giovana Gomes Leal

@@ -25,17 +25,17 @@ interface Estabelecimento {
 const estabelecimentos: Estabelecimento[] = [
   {
     nome: 'Cafeteria',
-    localizacao: 'Localização',
+    localizacao: 'Loja 1',
     avaliacao: 5.0,
   },
   {
     nome: 'Lanchonete',
-    localizacao: 'Localização',
+    localizacao: 'Loja 2',
     avaliacao: 4.0,
   },
   {
     nome: 'Doceria',
-    localizacao: 'Localização',
+    localizacao: 'Loja 3',
     avaliacao: 3.5,
   },
 ];

@@ -1,24 +1,21 @@
 'use client';
 
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './pag21.module.css';
 import Image from 'next/image';
 import home from "@/public/home.png";
 import chat from "@/public/chat.png";
-import token from "@/public/token.png";
+import tokenimg from "@/public/token.png";
 import menu from "@/public/menu_hamburguer.png";
 
-
-interface Props {
-  pedido: string;
-  valor: string;
-  data: string;
-  hora: string;
-  token: string;
-}
-
-export default function Page({ pedido, valor, data, hora, token }: Props) {
+export default function Page() {
+  const [pedido] = useState('');
+  const [valor] = useState('');
+  const [data] = useState('');
+  const [token] = useState('');
+  const [hora] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
     return (
       <div className={styles.container}>
         <div className={styles.header}>
@@ -54,7 +51,7 @@ export default function Page({ pedido, valor, data, hora, token }: Props) {
 
           <Link href="http://localhost:3000/cliente/pag27">
           <button className={styles.button}>
-            <Image src={token} width={40} height={40} alt="token"></Image>
+            <Image src={tokenimg} width={40} height={40} alt="tokenimg"></Image>
           </button></Link>
 
           <Link href="http://localhost:3000/cliente/pag9">

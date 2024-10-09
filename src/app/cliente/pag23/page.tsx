@@ -1,24 +1,20 @@
 'use client';
 
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './pag23.module.css';
 import Image from 'next/image';
 import home from "@/public/home.png";
 import chat from "@/public/chat.png";
 import token from "@/public/token.png";
 import menu from "@/public/menu_hamburguer.png";
-
-interface Props {
-    nomeEstabelecimento: string;
-    pedido: string;
-    valor: string;
-    data: string;
-    hora: string;
-  }
-
   
-  export default function Page({ nomeEstabelecimento, pedido, valor, data, hora }: Props) {
+  export default function Page() {
+    const [nomeEstabelecimento] = useState('');
+    const [pedido] = useState('');
+    const [valor] = useState('');
+    const [data] = useState('');
+    const [hora] = useState('');
     return (
       <div className={styles.container}>
         <div className={styles.content}>

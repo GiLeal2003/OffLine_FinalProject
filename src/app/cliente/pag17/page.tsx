@@ -1,18 +1,16 @@
 'use client';
 
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './pag17.module.css';
 
-interface Props {
-  nomeEstabelecimento: string;
-  pedido: string;
-  valor: string;
-  data: string;
-  token: string;
-}
-
-export default function Page({ nomeEstabelecimento, pedido, valor, data, token }: Props) {
+export default function Page() {
+  const [nomeEstabelecimento] = useState('');
+  const [pedido] = useState('');
+  const [valor] = useState('');
+  const [data] = useState('');
+  const [token] = useState('');
+  
     return (
       <div className={styles.container}>
         <div className={styles.header}>
@@ -35,6 +33,3 @@ export default function Page({ nomeEstabelecimento, pedido, valor, data, token }
       </div>
     );
   }
-
-
-

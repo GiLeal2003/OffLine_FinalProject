@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './pag29.module.css';
 import Rating from '@mui/material/Rating';
 import Box from '@mui/material/Box';
@@ -35,7 +35,7 @@ function getLabelText(value: number) {
 
 export default function Page(){
 
-  const [value, setValue] = React.useState<number | null>(2);
+  const [value, setValue] = React.useState<number | null>(0.5);
   const [hover, setHover] = React.useState(-1);
 
   return (
