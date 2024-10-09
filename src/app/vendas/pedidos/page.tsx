@@ -72,7 +72,7 @@ export default async function Page({searchParams}: {searchParams:any}) {
                       </select>
                     </td>
                     <td>
-                      <Link href={`http://localhost:3000/vendas/detalhesPedido/${pedido.cod}`}>
+                      <Link href={`http://localhost:3000/vendas/detalhesPedido/`}>
                         <button className={styles.data_detalhe}>Detalhes</button>
                       </Link>
                     </td>
