@@ -52,6 +52,9 @@ export default function Page() {
                       <div className={styles.esq}>
                       <Link href="http://localhost:3000/auxiliares/esqueciSenha"><button>Esqueci minha senha</button></Link>
                       </div>
+                      <div className={styles.cad}>
+                      <Link href="http://localhost:3000/auxiliares/cadastroEmpresa"><button>Cadastre sua empresa</button></Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -85,7 +88,7 @@ export default function Page() {
                       <Link href="http://localhost:3000/auxiliares/esqueciSenha"><button>Esqueci minha senha</button></Link>
                       </div>
                       <div className={styles.cad}>
-                      <Link href="http://localhost:3000/auxiliares/cadastroEmpresa"><button>Cadastre a sua empresa</button></Link>
+                      <Link href="http://localhost:3000/auxiliares/cadastroEmpresa"><button>Cadastre sua empresa</button></Link>
                       </div>
                     </div>
                   </div>

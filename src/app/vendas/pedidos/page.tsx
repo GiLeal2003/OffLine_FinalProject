@@ -51,7 +51,7 @@ export default async function Page({searchParams}: {searchParams:any}) {
                   <th>Data</th>
                   <th>Valor</th>
                   <th>Pagamento</th>
-                  <th>Tipo de Usuário</th>
+                  <th>Tipo de Cliente</th>
                   <th>Detalhes</th>
                 </tr>
               </thead>

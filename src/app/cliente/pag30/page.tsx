@@ -237,7 +237,7 @@ export default function Page() {
         </div>
       
 
-      <h1 className={styles.title}>Cafeteria</h1>
+      <h1 className={styles.title}>Estabelecimento 1</h1>
       <div className={styles.menu}>
         <button
           className={styles.menuButton}

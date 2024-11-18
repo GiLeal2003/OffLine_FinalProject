@@ -12,11 +12,11 @@ export default function Page() {
             <UserCircleIcon className="foto" />
           </div>
           <div className={styles.name}>
-            <span className={styles.name}>Lanchonete</span>
+            <span className={styles.name}>Estabelecimento 2</span>
           </div>
             <div className={styles.card_content}>
               <div className={styles.button}>
-              <button className={styles.help}>Dados Pessoais</button>
+              <button className={styles.help}>Dados da empresa</button>
               <button className={styles.help}>Senha</button>
                 <button className={styles.help}>Ajuda</button>
                 <button className={styles.help}>Fale Conosco</button>

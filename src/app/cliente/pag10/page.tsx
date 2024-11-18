@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import styles from './pag10.module.css';
 
 export default function Page() {
-    const [nomeEstabelecimento] = useState('Lanchonete');
+    const [nomeEstabelecimento] = useState('');
     const [pedido] = useState('');
     const [valor] = useState('');
     const [data] = useState('');

@@ -28,5 +28,5 @@
   //);
 //}
 export default function Page() {
-  return <p>RELATÓRIOS</p>;
+  return <p>RELATÓRIOS DE VENDAS</p>;
 }

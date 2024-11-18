@@ -56,9 +56,9 @@ export default function Page() {
       <div className={styles.dropdown}>
           <button className={styles.dropdown_btn}>Selecione um estabelecimento</button>
           <div className={styles.dropdown_content}>
-            <a href="#1">Lanchonete</a>
-            <a href="#2">Cafeteria</a>
-            <a href="#3">Doceria</a>
+            <a href="#1">Estabelecimento 1</a>
+            <a href="#2">Estabelecimento 2</a>
+            <a href="#3">Estabelecimento 3</a>
           </div>
         </div>
       <div className={styles.chat_messages}>

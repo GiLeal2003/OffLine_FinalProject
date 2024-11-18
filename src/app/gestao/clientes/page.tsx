@@ -40,7 +40,7 @@ export default async function Page({ searchParams }: { searchParams: any }) {
                   <th>Nome</th>
                   <th>Telefone</th>
                   <th>CPF</th>
-                  <th>Tipo de Usuário</th>
+                  <th>Tipo de Cliente</th>
                 </tr>
               </thead>
               <tbody>
