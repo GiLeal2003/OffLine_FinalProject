@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './clientes.module.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import { buscarClientesPorEstabelecimento } from '@/app/script';
 
 export default async function Page({ searchParams }: { searchParams: any }) {

@@ -27,6 +27,8 @@
     //</main>
   //);
 //}
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import styles from './vendas.module.css';
 export default function Page() {
-  return <p>RELATÓRIOS DE VENDAS</p>;
+  return <h1 className={styles.h1}>Relatório de Vendas</h1>;
 }
