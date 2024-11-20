@@ -12,9 +12,9 @@ interface ProdutoItem {
 }
 
 const produtoItems: ProdutoItem[] = [
-  { nome: 'Pão de Queijo', qtde: '02', preco: 'R$ 7,50', subtotal: 'R$ 15,00' },
+  { nome: 'Coxinha', qtde: '01', preco: 'R$ 10,50', subtotal: 'R$ 10,50' },
+  { nome: 'Pudim', qtde: '01', preco: 'R$ 12,20', subtotal: 'R$ 12,20' },
   { nome: 'Café espresso', qtde: '01', preco: 'R$ 5,00', subtotal: 'R$ 5,00' },
-  { nome: 'Salada de Fruta', qtde: '01', preco: 'R$ 11,00', subtotal: 'R$ 11,00' },
 ];
 
 export default function SacolaPedido() {
@@ -28,7 +28,7 @@ export default function SacolaPedido() {
       <h1 className={styles.title}>Minha Sacola</h1>
       <div className={styles.total}>
         <span>VALOR TOTAL</span>
-        <span className={styles.price}>R$ 31,00</span>
+        <span className={styles.price}>R$ 27,70</span>
       </div>
       <span className={styles.pending}>Pagamento Pendente</span>
       <div className={styles.produtoList}>

@@ -24,7 +24,7 @@ interface TokenData {
       nomeEstabelecimento: 'Nome Estabelecimento',
       pedido: 12345,
       status: 'Confirmado',
-      valorCompra: 100.00,
+      valorCompra: 27.70,
       token: 'XXXXXXXXXXXX',
     },
     {

@@ -29,7 +29,7 @@ const produtos: Produto[] = [
     descricao: 'Descrição',
     preco: 6.4,
     categoria: 'Recomendados',
-    quantidade: 1,
+    quantidade: 0,
   },
   {
     nome: 'Pão de Queijo 200g',
@@ -43,14 +43,14 @@ const produtos: Produto[] = [
     descricao: 'Descrição',
     preco: 22.7,
     categoria: 'Recomendados',
-    quantidade: 1,
+    quantidade: 0,
   },
   {
     nome: 'Beirute Simples',
     descricao: 'Descrição',
     preco: 6,
     categoria: 'Combos',
-    quantidade: 1,
+    quantidade: 0,
   },
   {
     nome: 'Coxinha',
@@ -64,14 +64,14 @@ const produtos: Produto[] = [
     descricao: 'Descrição',
     preco: 12.2,
     categoria: 'Recomendados',
-    quantidade: 1,
+    quantidade: 0,
   },
   {
     nome: 'Torta de Limão',
     descricao: 'Descrição',
     preco: 13.4,
     categoria: 'Recomendados',
-    quantidade: 1,
+    quantidade: 0,
   },
   {
     nome: 'Pão doce',
@@ -83,7 +83,7 @@ const produtos: Produto[] = [
   {
     nome: 'Coca-Cola',
     descricao: 'Descrição',
-    preco: 0,
+    preco: 10.00,
     categoria: 'Bebidas',
     quantidade: 0,
   },
