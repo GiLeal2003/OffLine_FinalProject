@@ -7,13 +7,15 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Page() {
   const [items, setItems] = useState([
-    { name: 'Lasanha Presunto e Queijo', price: 40.5, quantity: 1 },
+    { name: 'Queijo Quente', price: 5.00, quantity: 1 },
+    { name: 'Pão com Ovo', price: 5.00, quantity: 1 },
+    { name: 'Suco de Limão', price: 10.00, quantity: 1 },
   ]);
 
   
 
-  const [clientName, setClientName] = useState('Peter');
-  const [status, setStatus] = useState('Cancelado');
+  const [clientName, setClientName] = useState('Giovana');
+  const [status, setStatus] = useState('Concluído');
 
   const calculateTotal = () => {
     return items.reduce((acc, item) => acc + item.price * item.quantity, 0);

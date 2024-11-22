@@ -33,7 +33,7 @@ export default function Page() {
             </div>
             <div className={styles.card_info}>
               <p className={styles.p}>Crédito</p>
-              <p>....8899</p>
+              <p>XXXXXX</p>
             </div>
           </button></Link>
 
@@ -44,7 +44,7 @@ export default function Page() {
             </div>
             <div className={styles.card_info}>
               <p className={styles.p}>Débito</p>
-              <p>....8899</p>
+              <p>XXXXXX</p>
             </div>
           </button></Link>
           

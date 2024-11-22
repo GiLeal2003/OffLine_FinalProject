@@ -58,7 +58,7 @@ export default function Page() {
             <Image src={perfil} width={40} height={40} alt="perfil"></Image>
           </Link>
           </div>
-          <p>Usuário</p>
+          <p>Giovana</p>
         </div>
 
         <Link href="http://localhost:3000/cliente/pag34">

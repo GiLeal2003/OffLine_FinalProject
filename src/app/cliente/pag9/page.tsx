@@ -26,7 +26,7 @@ interface PageProps {
           <div className={styles.user_info}>
             <Image className={styles.img} src={perfil} width={80} height={80} alt="perfil"></Image>
           </div>
-          <span className={styles.user_name}>NOME DO USUÁRIO</span>
+          <span className={styles.user_name}>GIOVANA</span>
           <ul className={styles.user_menu_list}>
             <li>
             <Link href="#">Dados Pessoais</Link>
