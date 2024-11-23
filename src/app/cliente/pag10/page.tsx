@@ -25,7 +25,7 @@ export default function Page() {
         
         <h1 className={styles.h1}>Minha sacola</h1>
         <div className={styles.details}>
-          <p>Nome Estabelecimento: Estabelecimento 2{nomeEstabelecimento}</p>
+          <p>Estabelecimento 2{nomeEstabelecimento}</p>
           <p>Pedido N: 12345{pedido}</p>
           <p>DATA: 22/11/2024{data}</p>
           <p>Horário: 22:10{hora}</p>
