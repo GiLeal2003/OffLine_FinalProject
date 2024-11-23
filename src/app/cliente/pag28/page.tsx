@@ -31,10 +31,10 @@ interface Props {
             <button className={styles.back_button}>VOLTAR</button></Link>
           <h1 className={styles.h1}>TOKEN</h1>
           <div className={styles.details}>
-          <p className={styles.text}>Estabelecimento {nomeEstabelecimento}</p>
-            <p className={styles.text}>Data: {data}</p>
-            <p className={styles.text}>Pedido Nº: {pedido}</p>
-            <p className={styles.text}>Valor da Compra: R$ {valor}</p>
+          <p className={styles.text}>Estabelecimento 2{nomeEstabelecimento}</p>
+            <p className={styles.text}>Data: 22/11/2024{data}</p>
+            <p className={styles.text}>Pedido Nº: 12345{pedido}</p>
+            <p className={styles.text}>Valor da Compra: R$ 20,00{valor}</p>
             <p className={styles.text}>{token}</p>
           </div>
           <div className={styles.qr_code}>

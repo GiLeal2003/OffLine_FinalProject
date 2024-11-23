@@ -20,24 +20,24 @@ interface TokenData {
   
   const tokenData: TokenData[] = [
     {
-      data: 'dd/mm/ano',
-      nomeEstabelecimento: 'Nome Estabelecimento',
+      data: '22/11/2024',
+      nomeEstabelecimento: 'Estabelecimento 2',
       pedido: 12345,
       status: 'Confirmado',
       valorCompra: 20.00,
       token: 'XXXXXXXXXXXX',
     },
     {
-      data: 'dd/mm/ano',
-      nomeEstabelecimento: 'Nome Estabelecimento',
+      data: '06/10/2024',
+      nomeEstabelecimento: 'Estabelecimento 1',
       pedido: 54321,
       status: 'Finalizado',
       valorCompra: 50.00,
       token: 'XXXXXXXXXXXX',
     },
     {
-      data: 'dd/mm/ano',
-      nomeEstabelecimento: 'Nome Estabelecimento',
+      data: '27/09/2024',
+      nomeEstabelecimento: 'Estabelecimento 3',
       pedido: 98765,
       status: 'Cancelado',
       valorCompra: 25.00,

@@ -25,10 +25,10 @@ export default function Page() {
         
         <h1 className={styles.h1}>Minha sacola</h1>
         <div className={styles.details}>
-          <p>Nome Estabelecimento: {nomeEstabelecimento}</p>
-          <p>Pedido N: {pedido}</p>
-          <p>DATA: {data}</p>
-          <p>Horário: {hora}</p>
+          <p>Nome Estabelecimento: Estabelecimento 2{nomeEstabelecimento}</p>
+          <p>Pedido N: 12345{pedido}</p>
+          <p>DATA: 22/11/2024{data}</p>
+          <p>Horário: 22:10{hora}</p>
         </div>
         
         <div className={styles.coupon}>
@@ -44,19 +44,19 @@ export default function Page() {
           <ul>
             <li>
               <span className={styles.title}>Subtotal</span>
-              <span className={styles.value}>R$ {subtotal}</span>
+              <span className={styles.value}>R$ 20,00 {subtotal}</span>
             </li>
             <li>
               <span className={styles.title}>Desconto</span>
-              <span className={styles.value}>R$ {desconto}</span>
+              <span className={styles.value}>R$ 0,00{desconto}</span>
             </li>
             <li>
               <span className={styles.title}>Cupom</span>
-              <span className={styles.value}>R$ {cupom}</span>
+              <span className={styles.value}>R$ 0,00{cupom}</span>
             </li>
             <li>
               <span className={styles.title}>Total</span>
-              <span className={styles.value}>R$ {valor}</span>
+              <span className={styles.value}>R$ 20,00 {valor}</span>
             </li>
           </ul>
         </div>

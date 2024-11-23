@@ -11,9 +11,9 @@ export default function Page() {
   
     return (
       <div className={styles.container}>
-      <p>Pedido Nº: {pedido}</p>
-      <p>Data: {data}</p>
-      <p className={styles.space}>Valor da Compra: R$ {valor}</p>
+      <p>Pedido Nº: 12345{pedido}</p>
+      <p>Data: 22/11/2024{data}</p>
+      <p className={styles.space}>Valor da Compra: R$ 20,00{valor}</p>
       <div className={styles.body}>
       <h2 className={styles.title}>Pagamento aprovado</h2>
       <div className={styles.footer}>
